@@ -6,8 +6,8 @@ function Header (){
         <div className="nav-container">
         <nav>
             <ul>
-                <li><Link to="/" >Home</Link></li>
-                <li><Link to="/randomDrinks" >RandomDrinks</Link></li>
+                <li><Link className="Link" to="/" >Home</Link></li>
+                <li><Link className="Link" to="/randomDrinks" >RandomDrinks</Link></li>
             </ul>
         </nav>
         </div>

@@ -1,1 +1,1 @@
-nav-container{height:10vh;width:100vw;background-color:black}
+.nav-container{height:10vh;width:100%;background-color:#000}.nav-container nav{height:100%;width:100vw;background-color:black;display:flex;justify-content:center}.nav-container nav ul{list-style:none;display:flex;align-items:center;justify-content:center;flex-direction:row}.nav-container nav ul li .Link{text-decoration:none;color:white;padding:2vw;border-radius:40%;transition:all 0.3s ease-out}.nav-container nav ul li .Link:hover{background-color:white;border-radius:50%;color:black}

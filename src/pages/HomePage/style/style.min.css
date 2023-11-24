@@ -1,0 +1,1 @@
+.Drinks{background-color:blue;height:100%;width:92vw;padding:4vw;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center}.Drinks .btn-next{background-color:blueviolet;border:2px black groove;transition:all 0.1s ease-out}.Drinks .btn-next:active{border:2px blueviolet groove;background-color:white}

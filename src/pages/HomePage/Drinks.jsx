@@ -26,7 +26,7 @@ function Drinks (){
       <>
       {drinksR.map((cocktail) => {
             return (
-              <article>
+              <article className="Drinks">
                 <h2>{cocktail.strDrink}</h2>
                 <img src={cocktail.strDrink} alt="" />
                 <img src={cocktail.strDrinkThumb} alt="Drinks" height={200}  />
