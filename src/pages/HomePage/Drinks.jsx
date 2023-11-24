@@ -36,6 +36,7 @@ function Drinks (){
       </>
       ):(
         <p>Drinks are not ready still</p>
+
       )}
 
     </>)
