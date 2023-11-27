@@ -6,14 +6,15 @@ import { useParams } from "react-router-dom";
 
 function Details () {
 
-    
+    const{id} = useParams()
 
     const [cocktail, setCocktail] = useState(null);
 
 useEffect ( () => {  
+    
     (async () => {
  
-        const cocktailResponse = await  fetch("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=17222" )
+        const cocktailResponse = await  fetch("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + id)
         const cocktail = await cocktailResponse.json()
 
         setCocktail(cocktail.drinks[0])
