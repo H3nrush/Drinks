@@ -5,6 +5,7 @@ import Home from './pages/HomePage/Home';
 import Random from './pages/HomePage/randomDrinks';
 import DrinksAll from './pages/DrinksAll';
 import DrinksIng from './pages/DrinksIng';
+import Details from './pages/DrinksDetails';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path='/randomDrinks' element={<Random />}/>
       <Route path='/DrinksAll' element={<DrinksAll />} />
       <Route path='/DrinksIng' element={<DrinksIng />} />
+      <Route path='/Drinks/Detailes/:idDrink' element={<Details/>} />
     </Routes>
     </BrowserRouter>
     
