@@ -9,6 +9,7 @@ function Header (){
                 <li><Link className="Link" to="/" >Home</Link></li>
                 <li><Link className="Link" to="/randomDrinks" >RandomDrinks</Link></li>
                 <li><Link className="Link" to="/DrinksAll" >DrinksAll</Link></li>
+                <li><Link className="Link" to="/DrinksIng" >DrinksIng</Link></li>
             </ul>
         </nav>
         </div>
