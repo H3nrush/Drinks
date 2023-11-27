@@ -15,7 +15,7 @@ function App() {
       <Route path='/randomDrinks' element={<Random />}/>
       <Route path='/DrinksAll' element={<DrinksAll />} />
       <Route path='/DrinksIng' element={<DrinksIng />} />
-      <Route path='/Drinks/Detailes/:idDrink' element={<Details/>} />
+      <Route path='/Drinks/Detailes' element={<Details/>} />
     </Routes>
     </BrowserRouter>
     
