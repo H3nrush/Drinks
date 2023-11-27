@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "../component/Header/Header";
+import { Link } from "react-router-dom";
 
 function DrinksAll (){
     const [DrinksAll, setDrinksAll] = useState(null)
@@ -8,7 +9,7 @@ function DrinksAll (){
     useEffect(()=> {
         // if DrinksAll is null , undefined , {} or ...
         (async()=>{
-            const DrinksAllResponse = await fetch("https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list")
+            const DrinksAllResponse = await fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=")
             // after recieveing the all value from the url it will wait to recive a asking
             const DrinksAllInJs = await DrinksAllResponse.json()
             // then here const of the url (DrinksAllResponse) will save all the values of the Drinks into a .json file (recode)
@@ -22,10 +23,16 @@ function DrinksAll (){
     <Header />
     {DrinksAll !== null ? (
         <>
-          {DrinksAll.map((category) => {
+          {DrinksAll.map((drink) => {
             return (
+              
               <article className="Drinks">
-                <h2>{category.strCategory}</h2>
+
+                <Link className="Link" to={`/Drinks/Detailes/${drink.idDrink}`}>
+
+                <h2>{drink.strCategory}</h2>
+
+                </Link>
               </article>
             );
           })}

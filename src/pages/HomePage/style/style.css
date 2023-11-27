@@ -20,3 +20,17 @@
   border: 2px blueviolet groove;
   background-color: white;
 }
+
+.Link {
+  color: white;
+  text-decoration: none;
+  font-size: 1vw;
+  transition: all 0.3s ease-out;
+}
+
+.Link:hover {
+  color: black;
+  padding: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
